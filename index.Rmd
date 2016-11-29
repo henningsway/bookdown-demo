@@ -12,19 +12,20 @@ github-repo: rstudio/bookdown-demo
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
-# Prerequisites
+# Bücher agil entwickeln mit bookdown
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+**bookdown** ist ein _relativ_ neues Werkzeug, um hinreichend komplexe lineare Dokumente unabhängig vom späteren Output-Format zu entwickeln.
 
-For now, you have to install the development versions of **bookdown** from Github:
+Dabei ist wichtige Latex-Funktionalität wie z.B. Formeln $a + b = b + a$ oder Nummerierung und Referenzierung von Abbildungen und Tabellen verfügbar.
+
+Wer **bookdown** noch nicht installiert hat, kann die Development-Version von Github installieren:
 
 ```{r eval=FALSE}
 devtools::install_github("rstudio/bookdown")
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+Jede Rmd-Datei sollte nur ein Kapitel umfassen und mit einer `# Überschrift` beginnen.
 
-To compile this example to PDF, you need to install XeLaTeX.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -32,3 +33,5 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+PS: Dieses Test-Buch benötigt XeLaTeX für die Kompilierung nach PDF.
