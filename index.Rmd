@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
+title: "Der Bookdown Workflow"
+author: "Henning Bumann"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -9,7 +9,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: henningsway/bookdown-workflow
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "In diesem Dokument soll anschaulich beschrieben werden, wie mit bookdown praktisch gearbeitet werden kann. (In Ergänzung zu https://bookdown.org/yihui/bookdown/)"
 ---
 
 # Bücher agil entwickeln mit bookdown
@@ -19,6 +19,11 @@ description: "This is a minimal example of using the bookdown package to write a
 Dabei ist wichtige Latex-Funktionalität wie z.B. Formeln $a + b = b + a$ oder Nummerierung und Referenzierung von Abbildungen und Tabellen verfügbar.
 
 Wer **bookdown** noch nicht installiert hat, kann die Development-Version von Github installieren:
+
+```{r eval=FALSE}
+render_book("index.Rmd", output_format = "bookdown::gitbook")
+publish_book()
+```
 
 ```{r eval=FALSE}
 devtools::install_github("rstudio/bookdown")
