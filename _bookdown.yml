@@ -1,4 +1,4 @@
-book_filename: "bookdown-demo"
+book_filename: "bookdown-workflow"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Kapitel "
